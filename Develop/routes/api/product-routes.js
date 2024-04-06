@@ -29,27 +29,22 @@ router.get('/:id', (req, res) => {
 });
 
 // create new product
-router.post('/', (req, res) => {
-    Product.create({
+// router.post('/', (req, res) => {
+//     Product.create({
       
-        product_name: req.body.product_name,
-        price: req.body.price,
-        stock: req.body.stock,
-        tagIds: req.body.tagIds
+//         product_name: req.body.product_name,
+//         price: req.body.price,
+//         stock: req.body.stock,
+//         tagIds: req.body.tagIds
       
-    })
+//     })
   
         // .then(data => res.status(200).json(data))
         // .catch(err => res.status(400).json(err))
   
-});
+// });
 router.post('/', (req, res) => {
-  Product.create({
-
-  
-  where: {
-    id: req.
-  }
+  Product.create(req.body)
     .then((product) => {
       // if there's product tags, we need to create pairings to bulk create in the ProductTag model
       if (req.body.tagIds.length) {

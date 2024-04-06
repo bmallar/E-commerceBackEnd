@@ -19,5 +19,5 @@ It starts with importing express, which is our api. It also imports our routes, 
 Next is sets up our sever and uses sequelize to connect our models to the database
 
 
-1. [My repo Link]()
-2. [My video link]()
+1. [My repo Link](https://github.com/bmallar/E-commerceBackEnd)
+2. [My video link](https://drive.google.com/file/d/1OPpOjm2hPMHqZLjJN1ZbHXFElzgtJCa7/view)
